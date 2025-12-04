@@ -1,0 +1,58 @@
+/* Smooth scroll for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic reset-ish */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Header layout */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.main-nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Panels – full viewport height so each feels like a "screen" */
+.panel {
+  min-height: 100vh;
+  padding: 80px 24px 24px; /* top padding to clear the fixed header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-inner {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Temporary backgrounds just so you can see where panels start/end.
+   The designer’s CSS can completely override this later. */
+.panel-1 { background: #f8f8f8; }
+.panel-2 { background: #f0f0f0; }
+.panel-3 { background: #e8e8e8; }
+.panel-4 { background: #e0e0e0; }

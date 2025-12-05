@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* HEADER */}
       <section className="w-full flex justify-center">
         <Image
-          src="/clean%20page/Header%20Container.png"
+          src="/clean-page/header-container.png"
           alt="Lokki Header"
           width={1920}
           height={140}
@@ -20,7 +20,7 @@ export default function HomePage() {
       {/* HERO (Qué es Lokki / hero block) */}
       <section className="w-full flex justify-center">
         <Image
-          src="/clean%20page/qué%20es%20Lokki.png"
+          src="/clean-page/queesLokki.png"
           alt="Lokki Hero"
           width={1920}
           height={1100}
@@ -32,7 +32,7 @@ export default function HomePage() {
       {/* INFO 2 */}
       <section className="w-full flex justify-center">
         <Image
-          src="/clean%20page/Info%202.png"
+          src="/clean-page/info-2.png"
           alt="Lokki Info 2"
           width={1920}
           height={1100}
@@ -43,7 +43,7 @@ export default function HomePage() {
       {/* INFO 3 */}
       <section className="w-full flex justify-center">
         <Image
-          src="/clean%20page/Info3.png"
+          src="/clean-page/info3.png"
           alt="Lokki Info 3"
           width={1920}
           height={1100}
@@ -54,7 +54,7 @@ export default function HomePage() {
       {/* TESTIMONIOS */}
       <section className="w-full flex justify-center">
         <Image
-          src="/clean%20page/Testimonios.png"
+          src="/clean-page/testimonios.png"
           alt="Lokki Testimonios"
           width={1920}
           height={600}
@@ -65,7 +65,7 @@ export default function HomePage() {
       {/* FOOTER */}
       <section className="w-full flex justify-center">
         <Image
-          src="/clean%20page/footer.png"
+          src="/clean-page/footer.png"
           alt="Lokki Footer"
           width={1920}
           height={260}

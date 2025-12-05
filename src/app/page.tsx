@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <main className="w-full bg-[#E7F0E2]">
+      
       {/* HEADER */}
       <section className="w-full flex justify-center">
         <Image

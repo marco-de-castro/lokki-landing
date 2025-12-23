@@ -5,16 +5,28 @@ import React, { useEffect, useState } from "react";
 const useCases = [
   {
     id: 1,
-    image: "/clean-page/carousel/ecommerce.png",
+    image: "/clean-page/carousel/ecommerce1.png",
   },
   {
     id: 2,
-    image: "/clean-page/carousel/usecase-2.png",
+    image: "/clean-page/carousel/irreconocible 1.png",
   },
   {
     id: 3,
-    image: "/clean-page/carousel/usecase-3.png",
+    image: "/clean-page/carousel/inclusion 1.png",
   },
+ {
+  id: 4,
+    image: "/clean-page/carousel/hormiga 1.png",
+  },
+  {
+  id: 5,
+    image: "/clean-page/carousel/egamming 1.png",
+  },
+
+
+
+
 ];
 
 export default function UseCaseCarousel() {

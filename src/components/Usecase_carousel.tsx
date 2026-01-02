@@ -13,7 +13,7 @@ const useCases = [
   },
   {
     id: 3,
-    image: "/clean-page/carousel/inclusion 1.png",
+    image: "/clean-page/carousel/inclusion1.1.png",
   },
  {
   id: 4,

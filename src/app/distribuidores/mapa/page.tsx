@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function DistribuidoresMapaPage() {
   return (
@@ -17,9 +18,9 @@ export default function DistribuidoresMapaPage() {
         </div>
 
         <div className="mt-6">
-          <a className="underline text-sm" href="/">
+          <Link className="underline text-sm" href="/">
             Back
-          </a>
+          </Link>
         </div>
       </div>
     </main>

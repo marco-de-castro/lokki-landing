@@ -1,5 +1,6 @@
 // app/quieres-ser-distribuidor/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "¿Quieres ser Distribuidor? | Lokki",
@@ -123,18 +124,18 @@ export default function QuieresSerDistribuidorPage() {
               />
 
               <div className="mt-6 flex flex-wrap gap-3">
-                <a
+                <Link
                   href="#video"
                   className="inline-flex h-10 items-center rounded-full bg-black text-white px-5 text-sm font-medium hover:opacity-90 active:scale-[0.99] transition"
                 >
                   Ver el video
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#agenda"
                   className="inline-flex h-10 items-center rounded-full bg-white text-black px-5 text-sm font-medium border border-black/15 hover:bg-white/80 active:scale-[0.99] transition"
                 >
                   Agendar reunión
-                </a>
+                </Link>
               </div>
 
               <div className="mt-6 text-sm text-black/70">
@@ -269,14 +270,14 @@ export default function QuieresSerDistribuidorPage() {
             </div>
 
             {/* Replace with your real number/message */}
-            <a
+            <Link
               className="mt-4 inline-flex h-10 items-center rounded-full bg-black text-white px-5 text-sm font-medium hover:opacity-90 active:scale-[0.99] transition"
               href="https://wa.me/0000000000?text=Hola%20Lokki%2C%20quiero%20ser%20distribuidor.%20Mi%20negocio%20es%3A%20_____%20y%20estoy%20en%3A%20_____"
               target="_blank"
               rel="noreferrer"
             >
               Hablar por WhatsApp
-            </a>
+            </Link>
           </div>
         </div>
 

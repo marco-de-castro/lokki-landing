@@ -8,6 +8,23 @@ export const metadata = {
     "Conviértete en distribuidor autorizado Lokki. Gana por cada recarga, atrae más tráfico y ofrece a tus clientes una tarjeta internacional.",
 };
 
+// Put these near the top of the component (inside QuieresSerDistribuidorPage)
+const WHATSAPP_NUMBER = "573123686277"; // format: countrycode + number, NO +, NO spaces
+
+const whatsappText = `Hola Lokki
+
+Quiero ser distribuidor autorizado.
+
+Ciudad / País:
+Tipo de negocio:
+¿Cómo me contactan?:
+
+Gracias.`;
+
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+  whatsappText
+)}`;
+
 const BENEFITS = [
   {
     title: "Ganas por cada recarga",
@@ -243,42 +260,50 @@ export default function QuieresSerDistribuidorPage() {
         </div>
 
         {/* SCHEDULING / TALK TO SALES */}
-        <div id="agenda" className="mt-10 md:mt-12">
-          <SectionTitle
-            eyebrow="Habla con ventas"
-            title="Agenda una reunión (15 min)"
-            subtitle="Revisamos tu tipo de negocio, ubicación, volumen esperado y te explicamos la operación y márgenes."
-          />
+       <div id="agenda" className="mt-10 md:mt-12">
+  <SectionTitle
+    eyebrow="Habla con ventas"
+    title="Agenda una reunión (15 min)"
+    subtitle="Revisamos tu tipo de negocio, ubicación, volumen esperado y te explicamos la operación y márgenes."
+  />
 
-          <div className="mt-6 rounded-[28px] overflow-hidden border border-black/10 bg-white/70 shadow-sm">
-            {/* Calendly embed */}
-            <div className="relative w-full min-h-[740px]">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src={calendlyUrl}
-                title="Agenda con Lokki"
-              />
-            </div>
-          </div>
+  <div className="mt-6 rounded-[28px] overflow-hidden border border-black/10 bg-white/70 shadow-sm">
+    {/* Google Calendar booking embed */}
+    <div className="relative w-full min-h-[600px]">
+      <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ299Hs6_w2rPjBu4G8IXpZZ0NTN_n389KeoBXt6vuZzgwIVOoq4JaOUoHN70fsF5KxtsI2B5tyK?gv=true"
+        className="absolute inset-0 w-full h-full border-0"
+        title="Agenda una llamada con Lokki"
+        loading="lazy"
+      />
+    </div>
+  </div>
 
-          <div className="mt-4 rounded-2xl bg-white/70 border border-black/10 p-5">
-            <div className="text-sm font-semibold text-black">
-              ¿Prefieres WhatsApp?
-            </div>
-            <div className="mt-2 text-sm text-black/70">
-              Puedes agregar aquí un botón directo a WhatsApp con un mensaje prellenado.
-            </div>
+  {/* WhatsApp CTA block continues below */}
+  <div className="mt-4 rounded-2xl bg-white/70 border border-black/10 p-5">
+    {/* your WhatsApp block stays here */}
+  </div>
 
-            {/* Replace with your real number/message */}
-            <Link
-              className="mt-4 inline-flex h-10 items-center rounded-full bg-black text-white px-5 text-sm font-medium hover:opacity-90 active:scale-[0.99] transition"
-              href="https://wa.me/0000000000?text=Hola%20Lokki%2C%20quiero%20ser%20distribuidor.%20Mi%20negocio%20es%3A%20_____%20y%20estoy%20en%3A%20_____"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Hablar por WhatsApp
-            </Link>
-          </div>
+
+         <div className="mt-4 rounded-2xl bg-white/70 border border-black/10 p-5">
+  <div className="text-sm font-semibold text-black">
+    ¿Prefieres WhatsApp?
+  </div>
+
+  <div className="mt-2 text-sm text-black/70">
+    Escríbenos y te guiamos para convertirte en distribuidor.
+  </div>
+
+  <Link
+    className="mt-4 inline-flex h-10 items-center rounded-full bg-black text-white px-5 text-sm font-medium hover:opacity-90 active:scale-[0.99] transition"
+    href="https://wa.me/573123686277?text=Hola%20Lokki%2C%20quiero%20informaci%C3%B3n%20para%20ser%20distribuidor.%0A%C2%BFPodemos%20continuar%20por%20WhatsApp%20o%20agendar%20una%20llamada%3F"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Continuar por WhatsApp
+  </Link>
+</div>
+
         </div>
 
         {/* FOOTER SPACER */}

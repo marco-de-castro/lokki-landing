@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: "export",
+  trailingSlash: false, // generate no-slash URLs
   images: {
     unoptimized: true,
   },
@@ -10,3 +10,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+

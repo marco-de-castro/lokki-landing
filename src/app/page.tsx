@@ -25,21 +25,20 @@ useEffect(() => {
     <main className="min-h-screen flex flex-col items-center bg-[#ddecc7]">
       {/* --- REFINED COMPACT HEADER --- */}
       <header className="w-full flex justify-center bg-[#ddecc7] sticky top-0 z-50 border-b border-black/5 shadow-sm">
-        <div className="w-full max-w-[1440px] flex items-center justify-between px-6 py-2">
-          {/* LEFT: Empezar PNG */}
-          <div className="h-10 flex items-center">
-           <button
-  onClick={() => (window.location.href = "/quiero-mi-tarjeta")}
-  className="h-full w-auto hover:opacity-80 transition active:scale-95"
-  type="button"
->
+            <div className="w-full max-w-[1440px] flex items-center justify-between px-6 py-2">
+            {/* LEFT: Empezar PNG */}
+            <div className="h-10 flex items-center">
+            <button
+              onClick={() => (window.location.href = "/quiero-mi-tarjeta")}
+              className="h-full w-auto hover:opacity-80 transition active:scale-95"
+              type="button">
               <img
                 src="/clean-page/header_container/empezar.png"
                 alt="Obtener Tarjeta"
                 className="h-full w-auto object-contain"
               />
             </button>
-          </div>
+            </div>
 
           {/* RIGHT: Grouped Nav Assets + CTA + Logo */}
           <div className="flex items-center gap-4 h-12">
@@ -60,29 +59,29 @@ useEffect(() => {
               </button>
 
               {/* 2. Encuentra un Distribuidor */}
-<div className="relative inline-flex items-center h-8" ref={distributorMenuRef}>
-  <button
-    type="button"
-    onClick={() => setDistributorMenuOpen((v) => !v)}
-    className="h-8 flex items-center hover:opacity-70 transition active:scale-95"
-    aria-haspopup="menu"
-    aria-expanded={distributorMenuOpen}
-  >
-    <img
-      src="/clean-page/header_container/Encuentra-un-distribuidor.png"
-      className="h-9 w-auto object-contain block"
-      alt="Encuentra un distribuidor"
-    />
-  </button>
+        <div className="relative inline-flex items-center h-8" ref={distributorMenuRef}>
+        <button
+        type="button"
+        onClick={() => setDistributorMenuOpen((v) => !v)}
+        className="h-8 flex items-center hover:opacity-70 transition active:scale-95"
+        aria-haspopup="menu"
+        aria-expanded={distributorMenuOpen}
+        >
+        <img
+        src="/clean-page/header_container/Encuentra-un-distribuidor.png"
+        className="h-9 w-auto object-contain block"
+        alt="Encuentra un distribuidor"
+        />
+        </button>
 
-  {distributorMenuOpen && (
-    <div
-      className="absolute left-1/2 -translate-x-[40%] top-[40px]
+        {distributorMenuOpen && (
+        <div
+        className="absolute left-1/2 -translate-x-[40%] top-[40px]
                  w-[220px] rounded-xl bg-white shadow-lg
                  border border-black/10 overflow-hidden z-[999]"
-      role="menu"
-    >
-      <button
+        role="menu"
+        >
+        <button
         type="button"
         onClick={() => {
           setDistributorMenuOpen(false);
@@ -90,16 +89,16 @@ useEffect(() => {
         }}
         className="w-full px-3 py-2 hover:bg-black/5 transition
              flex items-center justify-start text-left"
-  role="menuitem"
-      >
+        role="menuitem"
+        >
         <img
           src="/clean-page/header_container/dropdown/Distribuidor/Mapa.png"
           className="h-9 w-auto object-contain block"
           alt="Ver mapa de puntos Lokki"
         />
-      </button>
+        </button>
 
-      <button
+        <button
         type="button"
         onClick={() => {
           setDistributorMenuOpen(false);
@@ -107,16 +106,16 @@ useEffect(() => {
         }}
         className="w-full px-3 py-2 hover:bg-black/5 transition
              flex items-center justify-start text-left"
-  role="menuitem"
-      >
+        role="menuitem"
+        >
         <img
           src="/clean-page/header_container/dropdown/Distribuidor/tarjetaYA.png"
           className="h-9 w-auto object-contain block"
           alt="Conseguir una tarjeta"
         />
-      </button>
+        </button>
 
-      <button
+        <button
         type="button"
         onClick={() => {
           setDistributorMenuOpen(false);
@@ -124,17 +123,17 @@ useEffect(() => {
         }}
          className="w-full px-3 py-2 hover:bg-black/5 transition
              flex items-center justify-start text-left"
-  role="menuitem"
-      >
+        role="menuitem"
+        >
         <img
           src="/clean-page/header_container/dropdown/Distribuidor/serdist.png"
           className="h-9 w-auto object-contain block"
           alt="¿Quieres ser un distribuidor?"
         />
-      </button>
-    </div>
-  )}
-</div>
+       </button>
+       </div>
+       )}
+        </div>
 
 
               {/* 3. Casos de Éxito */}
